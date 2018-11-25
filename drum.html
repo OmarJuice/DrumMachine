@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drum Machine</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="drum.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="debug.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Sigmar+One" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container" class="columns is-centered is-multiline">
+        <div class="column is-one-quarter-desktop is-two-fifths-tablet is-four-fifths-mobile">
+            <div class="level is-mobile">
+                <div id="box1" class="level-item box">
+                    <div id="button" class="columns is-mobile is-gapless is-multiline is-centered">
+                        <div class="column is-one-third has-text-centered"><button id="Q"class="button is-dark">Q</button></div>
+                        <div class="column is-one-third has-text-centered"><button id="W"class="button is-dark">W</button></div>
+                        <div class="column is-one-third has-text-centered"><button id="E"class="button is-dark">E</button></div>
+                        <div class="column is-one-third has-text-centered"><button id="A"class="button is-dark">A</button></div>
+                        <div class="column is-one-third has-text-centered"><button id="S"class="button is-dark">S</button></div>
+                        <div class="column is-one-third has-text-centered"><button id="D"class="button is-dark">D</button></div>
+                        <div class="column is-one-third has-text-centered"><button id="Z"class="button is-dark">Z</button></div>
+                        <div class="column is-one-third has-text-centered"><button id="X"class="button is-dark">X</button></div>
+                        <div class="column is-one-third has-text-centered"><button id="C"class="button is-dark">C</button></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="column is-one-fifth-desktop is-one-third-tablet is-four-fifths-mobile">
+            <div class="level is-mobile">
+                <div id="box2" class="level-item box">
+                    <div id="settings" class="columns is-multiline is-mobile is-centered">
+                        <div class="column is-half">
+                            <div id="power">
+                                <div id="powerSwitch">
+
+                                </div>
+                            </div>
+                            <h1>Power</h1>
+                        </div>
+                        <div class="column is-half">
+                            <div id="bank">
+                                <div id="bankSwitch">
+
+                                </div>
+                            </div>
+                            <h1>Bank</h1>
+                        </div>
+                        <div class="column is-full">
+                            <div id="display" class="box has-background-light has-text-centered">
+                                <h1 class="title is-4">♩♩♩</h1>
+                            </div>
+                        </div>
+                        <div class="column is-full">
+                            <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="volume">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="drum.js"></script>
+
+</body>
+
+</html>
